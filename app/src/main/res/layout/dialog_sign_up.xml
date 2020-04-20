@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edtSignUpUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textCapWords"
+        android:textColorHint="#66FFFFFF"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtSignUpEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#66FFFFFF"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtSignUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="#66FFFFFF"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edtSignUpPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColorHint="#66FFFFFF"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBase"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
