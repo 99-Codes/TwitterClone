@@ -15,4 +15,6 @@
     <string name="not_registered">Not registered?</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="email_address">Email Address</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="tweeter">Tweeter</string>
 </resources>

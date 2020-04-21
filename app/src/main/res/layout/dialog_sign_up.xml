@@ -22,51 +22,51 @@
         android:id="@+id/edtSignUpUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textCapWords"
-        android:textColorHint="#66FFFFFF"
-        android:layout_gravity="center"
-        />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#66FFFFFF" />
 
     <EditText
         android:id="@+id/edtSignUpEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="@string/email_address"
         android:inputType="textEmailAddress"
-        android:textColorHint="#66FFFFFF"
-        android:layout_gravity="center"
-        />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#66FFFFFF" />
 
     <EditText
         android:id="@+id/edtSignUpPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textColorHint="#66FFFFFF"
-        android:layout_gravity="center"
-        />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#66FFFFFF" />
 
     <EditText
         android:id="@+id/edtSignUpPasswordConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:backgroundTint="@android:color/white"
         android:ems="10"
         android:hint="@string/confirm_password"
         android:inputType="textPassword"
-        android:textColorHint="#66FFFFFF"
-        android:layout_gravity="center"
-        />
+        android:textColor="#FFFFFF"
+        android:textColorHint="#66FFFFFF" />
 
     <Button
         android:id="@+id/btnSignUp"

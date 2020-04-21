@@ -11,29 +11,46 @@
         android:id="@+id/imgLogo"
         android:layout_width="150dp"
         android:layout_height="146dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="136dp"
         android:contentDescription="@string/logo"
+        android:translationY="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/origami" />
 
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Ͳաҽҽէҽɾ"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:translationY="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/edtUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:backgroundTint="@android:color/white"
-        android:capitalize="words"
+        android:alpha="0"
+        android:background="@drawable/edt_border"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName|textCapWords"
         android:maxLines="1"
         android:singleLine="true"
+        android:textAlignment="center"
         android:textColor="#DDFFFFFF"
         android:textColorHint="#66FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
 
@@ -41,16 +58,19 @@
         android:id="@+id/edtPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="25dp"
+        android:alpha="0"
+        android:background="@drawable/edt_border"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:maxLines="1"
         android:singleLine="true"
+        android:textAlignment="center"
         android:textColor="#DDFFFFFF"
         android:textColorHint="#66FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
 
@@ -59,10 +79,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:alpha="0"
         android:text="@string/keep_me_logged_in"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/edtPassword"
         app:layout_constraintStart_toStartOf="@+id/edtPassword"
         app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
@@ -72,7 +92,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:alpha="0"
         android:background="@null"
+        android:onClick="onClickLogin"
         android:text="@string/login"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
@@ -82,33 +104,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/switchKeepLoggedIn" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:text="@string/not_registered"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSignUpStart"
-        app:layout_constraintEnd_toStartOf="@+id/btnSignUpStart"
-        app:layout_constraintHorizontal_bias="0.908"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/btnSignUpStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0"
         android:background="@null"
+        android:onClick="OnClickSignUp"
         android:text="@string/sign_up"
-        android:textColor="#1863AE"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.975" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0"
+        android:background="@null"
+        android:text="@string/forgot_password"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
