@@ -55,14 +55,12 @@ public class Login extends AppCompatActivity {
         imgLogo.animate().translationY(0).setDuration(2000).setStartDelay(2000);
         txtAppName.animate().translationY(0).setDuration(2000).setStartDelay(2000);
 
-        handler.postDelayed(runnable, 3750);
+        handler.postDelayed(runnable, 3000);
 
         // Check if user is logged in, if true load the social media activity
         if (ParseUser.getCurrentUser() != null) {
             transitionToSocialMediaActivity();
         }
-
-
     }
 
     // Handles the Login process

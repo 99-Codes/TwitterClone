@@ -9,8 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.parse.ParseUser;
 
-import java.util.Objects;
-
 public class SocialMediaActivity extends AppCompatActivity {
 
     Button btnLogout;
@@ -19,7 +17,6 @@ public class SocialMediaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_media);
-        Objects.requireNonNull(getSupportActionBar()).setTitle("Tweeter");
 
         btnLogout = findViewById(R.id.btnLogout);
 
